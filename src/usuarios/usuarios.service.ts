@@ -42,6 +42,24 @@ export class UsuariosService {
       papel: 'auditor',
       ativo: true,
     },
+    {
+      id: 4,
+      nome: 'Josicleiton',
+      email: 'josicleiton@empresa.com',
+      senhaHash:
+        '$2b$12$RVZLIX/ijXNE41l1J9.HReSlB5alPcPLaqj6xxdUeYRThYN4//g7.',
+      papel: 'gestor',
+      ativo: true,
+    },
+    {
+      id: 5,
+      nome: 'Tibúrcio',
+      email: 'tiburcio@empresa.com',
+      senhaHash:
+        '$2b$12$RfcxImV9xTnBXheDH9UBEOE0FZMbfBNyV43ezLO2ilphb4KDXA37m',
+      papel: 'auditor',
+      ativo: true,
+    }
   ];
 
   buscarPorEmail(email: string) {

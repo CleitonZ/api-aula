@@ -21,4 +21,12 @@ export class SolicitacoesController {
   aprovar(@Param('id', ParseIntPipe) id: number) {
     return this.solicitacoesService.aprovar(id);
   }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles('gestor', 'auditor')
+  @Get('relatorio')
+  relatorio(@Param('id', ParseIntPipe) id: number) {
+    return this.solicitacoesService.relatorio(id)
+  }
+  
 }

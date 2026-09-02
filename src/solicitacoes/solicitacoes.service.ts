@@ -29,4 +29,9 @@ export class SolicitacoesService {
     solicitacao.status = 'aprovada';
     return solicitacao;
   }
+
+  relatorio(id: number) {
+    const solicitacao = this.relatorio(id);
+    return solicitacao;
+  }
 }
